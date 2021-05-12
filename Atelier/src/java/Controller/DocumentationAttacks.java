@@ -61,6 +61,7 @@ public class DocumentationAttacks extends HttpServlet {
             throws ServletException, IOException {
         RequestDispatcher pageToDisplay; 
         pageToDisplay = request.getRequestDispatcher("/WEB-INF/docu.jsp");
+        pageToDisplay.forward(request, response);
     }
 
     /**

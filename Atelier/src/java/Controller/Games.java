@@ -60,7 +60,8 @@ public class Games extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher pageToDisplay; 
-        pageToDisplay = request.getRequestDispatcher("/WEB-INF/undefined"); 
+        pageToDisplay = request.getRequestDispatcher("/WEB-INF/game.jsp"); 
+        pageToDisplay.forward(request, response);
     }
 
     /**
