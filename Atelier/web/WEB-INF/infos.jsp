@@ -12,7 +12,7 @@
         <title>Informations sur la formation</title>
     </head>
     <body>
-        <h1>Inofs générales</h1>
+        <h1>Infos générales</h1>
     <br>
     <a href="home">Retour Accueil</a>
     </body>
