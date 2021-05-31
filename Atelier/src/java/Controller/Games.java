@@ -5,14 +5,10 @@
  */
 package Controller;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
+import java.io.*;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 
 /**
  *
@@ -60,8 +56,21 @@ public class Games extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher pageToDisplay; 
-        pageToDisplay = request.getRequestDispatcher("/WEB-INF/game.jsp"); 
+        pageToDisplay = request.getRequestDispatcher("/WEB-INF/game_index.jsp"); 
         pageToDisplay.forward(request, response);
+        /*
+                int [] test_attribute = (int[])request.getAttribute("coords"); 
+        if (test_attribute == null){
+            RequestDispatcher pageToDisplay; 
+            pageToDisplay = request.getRequestDispatcher("/WEB-INF/game_index.jsp"); 
+            pageToDisplay.forward(request, response);
+        }
+        else {            
+            RequestDispatcher pageToDisplay; 
+            pageToDisplay = request.getRequestDispatcher("/WEB-INF/game_scene1.jsp"); 
+            pageToDisplay.forward(request, response);
+        }
+        */
     }
 
     /**
@@ -75,7 +84,18 @@ public class Games extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        String coords = request.getParameter("coord");
+        String [] test0 = coords.split(",", 0);
+        int int_test0 = Integer.parseInt(test0[0]);
+        int int_test1 = Integer.parseInt(test0[1]);
+        
+        HttpSession session = request.getSession(); 
+        session.setAttribute("character_x", int_test0);
+        session.setAttribute("character_y", int_test1);
+        RequestDispatcher pageToDisplay; 
+        pageToDisplay = request.getRequestDispatcher("/WEB-INF/game_scene1.jsp?x="+int_test0+
+                "&y="+int_test1);
+        pageToDisplay.forward(request, response);
     }
 
     /**

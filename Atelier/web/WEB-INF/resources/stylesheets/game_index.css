@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 mai 2021, 00:16:37
+    Author     : ADZOH-VINYO DIANA
+*/
+
+#char_div{
+    display: inline ;
+}
+#char_box{
+    display: inline ;
+}
+#char1 {
+    height: 48px; 
+    width: 48px;                 
+    background: 
+        /*url('https://i.ibb.co/9tvL2Wq/Pik-Png-com-loading-png-985193.png')
+        */
+        /*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')0px 0px;
+}
+#char2 {
+    height: 48px; width: 48px;                 
+    background:/*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')144px 0px;
+}
+#char3 {
+    height: 48px; width: 48px;                 
+    background:/*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')288px 0px;
+}
+#char4 {
+    height: 48px; width: 48px;                 
+    background:/*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')432px 0px;
+}
+#char5 {
+    height: 48px; width: 48px;                 
+    background: /*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')0px 192px;
+}
+#char6 {
+    height: 48px; width: 48px;                 
+    background:/*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')144px 192px;
+}
+#char7 {
+    height: 48px; width: 48px;                 
+    background:/*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')288px 192px;
+}
+#char8 {
+    height: 48px; width: 48px;                 
+    background:/*576 x 384*/
+        url('https://i.ibb.co/jGqntSJ/waiters.png')432px 192px;
+}
