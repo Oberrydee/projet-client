@@ -16,7 +16,7 @@
                 position: absolute;
                 width: 500px;
                 height: 500px;
-                background-color: grey;
+                background-color: lightgrey;
             }
             #char_box{
                 display: inline ;
