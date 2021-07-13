@@ -11,6 +11,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <style>
+            .obstacle{
+                position:absolute; 
+                width: 10px;
+                height: 100px;
+                background-color: red;
+                top: 345px; 
+                right:  125px; 
+                
+            }
             #char_div{
                 display: inline ;
                 position: absolute;
@@ -35,7 +44,25 @@
                     url('https://i.ibb.co/jGqntSJ/waiters.png')${character_x}px ${character_y}px;
             }
         </style>
-         <script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
+    </head>
+    <body>
+        <h1>Game scene</h1>
+        
+        <div id="char_div" 
+             onmouseenter ="">
+        <canvas id ="char1">
+  Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.</canvas>
+            
+        <div id="obstacle_1" class="obstacle" >
+        </div>
+        <p>test</p>
+        <div>
+             <p id = 'r'></p>
+             <p id = 'rt'></p>
+        </div>
+    </body>
+    
+        <script src='\web\WEB-INF\test.js'></script>
         <script>
             document.onkeydown = checkKey;
             var direction = "";
@@ -47,6 +74,7 @@
             var min_y_axis = -500; 
             var max_y_axis = 0; 
             var iter = 1;
+            var obstacles = [document.getElementById("obstacle_1")];
             function checkKey(e) {
 
                 e = e ||  window.event;
@@ -142,6 +170,11 @@
                         break;  
                 }
             }
+            function obstacleInPath(listObstacles){
+                var obstacleInPath = listObstacles[0];
+                
+                return obstacleInPath; ; 
+            }
             function newState( x, y){
                 var    position ; 
                 var x_0y_0 = ``+x+`px -`+y+`px`; 
@@ -187,19 +220,4 @@
             } 
             //loadingAnimation(this,${character_x},${character_y})
         </script>
-    </head>
-    <body>
-        <h1>Game scene</h1>
-        
-        <div id="char_div" 
-             onmouseenter ="">
-        <canvas id ="char1">
-  Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.</canvas>
-        </div>
-        <p>test</p>
-        <div>
-             <p id = 'r'></p>
-             <p id = 'rt'></p>
-        </div>
-    </body>
 </html>

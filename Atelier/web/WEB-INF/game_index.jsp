@@ -127,6 +127,31 @@
                 
             }
            // loadingAnimation()
+           
+           setInterval(() => {
+               tmp = document.getElementById("char"+1);
+               loadingAnimation(tmp,0,0);
+               tmp = document.getElementById("char"+5);
+               loadingAnimation(tmp,0,192);
+           },500);
+           setInterval(() => {
+               tmp = document.getElementById("char"+2);
+               loadingAnimation(tmp,144,0);
+               tmp = document.getElementById("char"+6);
+               loadingAnimation(tmp,144,192);
+           },400);
+           setInterval(() => {
+               tmp = document.getElementById("char"+3);
+               loadingAnimation(tmp,288,0);
+               tmp = document.getElementById("char"+7);
+               loadingAnimation(tmp,288,192);
+           },300);
+           setInterval(() => {
+               tmp = document.getElementById("char"+4);
+               loadingAnimation(tmp,432,0);
+               tmp = document.getElementById("char"+8);
+               loadingAnimation(tmp,432,192);
+           },400);
         </script>
     </head>
     <body>
@@ -136,63 +161,56 @@
             <form action="games" method="post">
                 <input name = 'coord' value=0,0 hidden>
                 <p onclick='submit_0_0()'id="char1" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,0,0)" > </p>
+                   > </p>
                 <input id = 'submit_0_0' type ='submit' hidden/>
             </form>
         </div>
         <div id="char_div" >
             <form action="games" method="post">
                 <input name = 'coord' value=144,0 hidden>
-                <p onclick='submit_144_0()'id="char2" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,144,0)" > </p>
+                <p onclick='submit_144_0()'id="char2" name = 'coord' > </p>
                 <input id = 'submit_144_0' type ='submit' hidden/>
             </form>
         </div>
         <div id="char_div" >
             <form action="games" method="post">
                 <input name = 'coord' value=288,0 hidden>
-                <p onclick='submit_288_0()'id="char3" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,288,0)" > </p>
+                <p onclick='submit_288_0()'id="char3" name = 'coord'  > </p>
                 <input id = 'submit_288_0' type ='submit' hidden/>
             </form>
         </div>
         <div id="char_div" >
             <form action="games" method="post">
                 <input name = 'coord' value=432,0 hidden>
-                <p onclick='submit_432_0()'id="char4" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,432,0)" > </p>
+                <p onclick='submit_432_0()'id="char4" name = 'coord'> </p>
                 <input id = 'submit_432_0' type ='submit' hidden/>
             </form>
         </div>
         <div id="char_div" >
             <form action="games" method="post">
                 <input name = 'coord' value=0,192 hidden>
-                <p onclick='submit_0_192()'id="char5" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,0,192)" > </p>
+                <p onclick='submit_0_192()'id="char5" name = 'coord' > </p>
                 <input id = 'submit_0_192' type ='submit' hidden/>
             </form>
         </div>
         <div id="char_div" >
             <form action="games" method="post">
                 <input name = 'coord' value=144,192 hidden>
-                <p onclick='submit_144_192()'id="char6" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,144,192)" > </p>
+                <p onclick='submit_144_192()'id="char6" name = 'coord'  > </p>
                 <input id = 'submit_144_192' type ='submit' hidden/>
             </form>
         </div>
         <div id="char_div" >
             <form action="games" method="post">
                 <input name = 'coord' value=288,192 hidden>
-                <p onclick='submit_288_192()'id="char7" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,288,192)" > </p>
+                <p onclick='submit_288_192()'id="char7" name = 'coord'> </p>
                 <input id = 'submit_288_192' type ='submit' hidden/>
             </form>
         </div>
         <div id="char_div" >
             <form action="games" method="post">
                 <input name = 'coord' value=432,192 hidden>
-                <p onclick='submit_432_192()'id="char8" name = 'coord' 
-                   onmouseenter="loadingAnimation(this,432,192)" > </p>
+                <p onclick='submit_432_192()'id="char8" name = 'coord'  > </p>
                 <input id = 'submit_432_192' type ='submit' hidden/>
             </form>
         </div>

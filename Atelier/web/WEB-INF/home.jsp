@@ -20,13 +20,13 @@
     		<nav>
 		    	<img alt="logo cesi" src="ecole-alternance.svg">
 		    	<div>
-			    	<a href="infos-formation">Informations sur la formation</a>
+			    	<!--<a href="infos-formation">Informations sur la formation</a>-->
 			
-				     <a href="docu-attacks">Documentation des attaques</a>
+				     <a href="./ExoTurtle.pdf">Documentation des attaques</a>
 				
 				     <a href="https://catalogue.cesi.fr/manager-en-systemes-d-information-option-securite-2169032/" target="_blank">Site officiel du CESI</a>
 				
-				     <a href="games">Mini-jeux</a>
+				     <a href="http://www.cloudlearning.fr/datacloud/ateliercbersecurite12166154421/index.html?v=817533#">Mini-jeux</a>
 			    </div>
 			     
 			     <img id="gameMask" alt="logo cesi" src="game-mask.jpg">
@@ -105,7 +105,7 @@
 
 	.carousel {
 		width: 70%;
-		height: 232px;
+		height: 250px;
 		margin: 10% auto;
 	}
 	.carousel-inner, .carousel-item {
